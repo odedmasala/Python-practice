@@ -9,7 +9,7 @@ load_dotenv()
 # client = MongoClient(process.env)
 # url = "https://api.tvmaze.com/shows"
 # DB_URL = os.environ.get("DB_URL") 
-print(DB_URL)
+# print(DB_URL)
 # Get All
 # resp = requests.get(url)
 # data = list(resp.json())[0:9]
