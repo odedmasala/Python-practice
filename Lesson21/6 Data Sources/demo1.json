@@ -1,0 +1,11 @@
+{
+  "name": "Avi",
+  "age": 30,
+  "address": {
+    "city": "Herzliya",
+    "street": {
+      "name": "Herzl",
+      "number": 120
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "person": [
+    {
+      "name": "dani",
+      "adress": {
+        "city": "lod",
+        "street": { "nsme": "king solmon", "number": 120 }
+      }
+    },
+    {
+      "name": "david",
+      "adress": {
+        "city": "ramla",
+        "street": { "name": "narkis", "number": 12 }
+      }
+    }
+  ]
+}

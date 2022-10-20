@@ -1,0 +1,34 @@
+{
+  "persons": [
+    {
+      "name": "Avi",
+      "address": {
+        "city": "Herzliya",
+        "street": {
+          "name": "Herzl",
+          "number": 120
+        }
+      }
+    },
+    {
+      "name": "Dana",
+      "address": {
+        "city": "Tel Aviv",
+        "street": {
+          "name": "Begin",
+          "number": 93
+        }
+      }
+    },
+    {
+      "name": "Ron",
+      "address": {
+        "city": "Haifa",
+        "street": {
+          "name": "Herzl",
+          "number": 43
+        }
+      }
+    }
+  ]
+}
