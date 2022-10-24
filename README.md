@@ -1,5 +1,6 @@
 # Python-practice
 
-# web modle 
+# web model  
+
 https://pypi.org/
 blow print
