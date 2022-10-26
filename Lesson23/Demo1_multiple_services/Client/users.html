@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+</head>
+
+<body>
+    <button onclick="getAllUsers()">get data from server</button>
+    <table id="tbl">
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>CITY</th>
+
+        </tr>
+
+    </table>
+
+
+    <script>
+        const usersUrl = 'http://127.0.0.1:8000/users';
+
+        async function getAllUsers() {
+            const resp = await fetch(usersUrl)
+            const users = await resp.json()
+
+            const tableEl = document.getElementById("tbl")
+
+            users.forEach(user => {
+                const tr = document.createElement("tr")
+                const tdId = document.createElement("td")
+                const tdName = document.createElement("td")
+                const tdEmail = document.createElement("td")
+                const tdCity = document.createElement("td")
+
+                tdId.textContent = user.id
+                tdName.textContent = user.name
+                tdEmail.textContent = user.email
+                tdCity.textContent = user.address.city
+
+                tr.appendChild(tdId)
+                tr.appendChild(tdName)
+                tr.appendChild(tdEmail)
+                tr.appendChild(tdCity)
+
+                tableEl.appendChild(tr)
+
+            })
+        }
+
+    </script>
+</body>
+
+</html>
